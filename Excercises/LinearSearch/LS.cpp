@@ -26,7 +26,9 @@ Explanation: There is no pair of indices that satisfies the conditions.
 */
 
 #include <iostream>
+#include <vector>
 using namespace std;
+#include <sstream>
 
 bool checkIfExist(int arr[], int size) {
     for (int i = 0; i < size; i++) {
@@ -40,11 +42,25 @@ bool checkIfExist(int arr[], int size) {
 }
 
 int main() {
-    int arr[] = {3, 1, 7, 11};
-    int size = 4;
 
-    // Usar std::boolalpha para imprimir true o false
-    cout << boolalpha << checkIfExist(arr, size) << endl;
+    vector<int> arr;
+    string input;
+
+    // Leer los números del usuario en una sola línea
+    cout << "Enter the elements of the array (space-separated): ";
+    getline(cin, input); // Leer toda la línea de entrada
+    stringstream ss(input); // Usar stringstream para procesar los números
+    int num;
+    while (ss >> num) {
+        arr.push_back(num); // Agregar cada número al vector
+    }
+
+    // Llamar a la función checkIfExist
+    bool result = checkIfExist(arr.data(), arr.size());
+
+    cout<<result<<endl;
+
+
 
     return 0;
 }
