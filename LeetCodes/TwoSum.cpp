@@ -1,0 +1,5 @@
+/*
+I used the two pointers technique
+
+The first at the start of the array and the other at the end of the array
+*/

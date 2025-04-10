@@ -1,0 +1,3 @@
+/*
+Verificar que una llinked list este bien formadda
+*/
