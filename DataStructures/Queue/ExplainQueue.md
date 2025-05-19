@@ -5,16 +5,21 @@ A **queue** is a linear data structure that follows the **First In, First Out (F
 
 Queues can be implemented using arrays, linked lists, or dynamic memory structures, and they are widely used in various algorithms and real-world applications.
 
+- Los elementos se **agregan al final (enqueue)** y se **eliminan del frente (dequeue)**.
+
+
 ---
 
 ## **Complexity of Operations in Queues**
 
-| Operation        | Time Complexity | Explanation                                                                 |
-|------------------|-----------------|-----------------------------------------------------------------------------|
-| **Enqueue (Add)**| O(1)            | Adding an element to the back of the queue is a constant-time operation.    |
-| **Dequeue (Remove)**| O(1)         | Removing the front element from the queue is a constant-time operation.     |
-| **Peek/Front**   | O(1)            | Accessing the front element without removing it is a constant-time operation.|
-| **IsEmpty**      | O(1)            | Checking if the queue is empty is a constant-time operation.                |
+
+| Operación     | Descripción                                      | Complejidad |
+|---------------|--------------------------------------------------|-------------|
+| `enqueue(x)`  | Inserta el elemento `x` al final de la cola      | O(1)        |
+| `dequeue()`   | Elimina el primer elemento de la cola            | O(1)        |
+| `front()`     | Devuelve el primer elemento sin eliminarlo       | O(1)        |
+| `isEmpty()`   | Verifica si la cola está vacía                   | O(1)        |
+| `size()`      | Retorna el número de elementos en la cola        | O(1)        |
 
 ---
 
