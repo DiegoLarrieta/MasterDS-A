@@ -17,7 +17,7 @@ int main() {
     cout << "Tamaño actual de la cola: " << fila.size() << endl;
 
     // Front: Vemos el primer elemento (no lo eliminamos)
-    cout << "Elemento al frente de la cola: " << fila.front() << endl;
+    cout << "Elemento al frente de la cola: " << fila.front() << endl; // 10
 
     // Back: Último elemento de la cola
     cout << "Último elemento agregado (al final): " << fila.back() << endl;
