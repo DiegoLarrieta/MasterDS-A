@@ -5,14 +5,14 @@ Tienes una lista doblemente enlazada (DLL) en la que algunos nodos tienen un pun
 Esa lista child también puede tener su propio child, formando una estructura en árbol de DLLs.
 
 Ejemplo:
-1 - 2 - 3 - 4 - 5
+1 - 2 - 3 - 4 - 5 - 6
         |
-        7 - 8 - 9
+        7 - 8 - 9 - 10
             |
-            10
+            11 - 12
 
 Salida esperada
-1 - 2 - 3 - 7 - 8 - 10 - 9 - 4 - 5
+1 - 2 - 3 - 7 - 8 - 11 - 12 - 9 - 10 - 4 - 5 - 6
 
 
 
